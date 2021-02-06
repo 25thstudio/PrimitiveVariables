@@ -1,0 +1,20 @@
+{
+    "name": "com.alicate4.primitivevariables",
+    "version": "0.0.1",
+    "displayName": "Primitive Variables",
+    "description": "Create game assets using primitives (string, int, float, boolean) and share in your Game Objects",
+    "unity": "2019.1",
+    "unityRelease": "0b5",
+    "dependencies": {
+   },
+   "keywords": [
+      "ScriptableObjects",
+      "Variables",
+      "Primitives"
+    ],
+    "author": {
+      "name": "Paulo Sigrist",
+      "email": "paulo.sigrist@gmail.com",
+      "url": "https://github.com/alicate4/primitivevariables"
+    }
+  }
