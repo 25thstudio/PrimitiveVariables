@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Alicate4.PrimitiveVariables
 {
+    [CreateAssetMenu(fileName = "Float Value 1", menuName = "Commons/Numbers/Float", order = 700)]
     public class FloatVariable : ScriptableObject
     {
         #region Properties
@@ -31,10 +32,5 @@ namespace Alicate4.PrimitiveVariables
             return floatValue;
         }
         #endregion
-
-
-
-
     }
-
 }

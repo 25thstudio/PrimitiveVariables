@@ -2,35 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IntVariable : ScriptableObject
+namespace Alicate4.PrimitiveVariables
 {
-    #region Properties
-    [Multiline]
-    [SerializeField]
-    private string description;
-
-    [SerializeField]
-    private int intValue;
-
-    #endregion
-
-    #region Setters and getters
-    public int Value { get => intValue; set => intValue = value; }
-
-    public int Increase(int value = 0)
+    [CreateAssetMenu(fileName = "Integer Value 1", menuName = "Commons/Numbers/Integer", order = 701)]
+    public class IntVariable : ScriptableObject
     {
-        intValue += value;
-        return intValue;
+        #region Properties
+        [Multiline]
+        [SerializeField]
+        private string description;
+
+        [SerializeField]
+        private int intValue;
+
+        #endregion
+
+        #region Setters and getters
+        public int Value { get => intValue; set => intValue = value; }
+
+        public int Increase(int value = 0)
+        {
+            intValue += value;
+            return intValue;
+        }
+
+        public int Decrease(int value = 0)
+        {
+            intValue -= value;
+            return intValue;
+        }
+        #endregion
     }
-
-    public int Decrease(int value = 0)
-    {
-        intValue -= value;
-        return intValue;
-    }
-    #endregion
-
-
-
-
 }
